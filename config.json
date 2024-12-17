@@ -1,0 +1,33 @@
+{
+  "overt_message_length": 1000000,
+  "covert_message_length": 1000,
+  "auto_covert_length": true,
+  "bit_size": 32,
+  "decimal_range": {
+    "max": 10,
+    "min": 1
+  },
+  "file_paths": {
+    "overt_decimal": "1_1_overt_message_decimal.csv",
+    "overt_binary": "1_2_overt_message_binary.csv",
+    "covert_message": "2_covert_message_binary.csv",
+    "modified_binary": "3_1_modified_message_binary.csv",
+    "modified_decimal_as_float": "3_2_modified_message_interpreted_as_float.csv",
+    "extracted_covert": "4_extracted_covert_message.csv",
+    "extracted_covert_text": "5_extracted_covert_message_text.txt",
+    "reconstructed_decimal": "6_1_reconstructed_overt_message_decimal.csv",
+    "reconstructed_binary": "6_2_reconstructed_overt_message_binary.csv",
+    "log": "7_log.txt"
+  },
+  "nan_handling": "ignore",
+  "inject_nans": true,
+  "nan_injection_ratio": 0.1,
+  "inf_injection_ratio": 0.05,
+  "interpret_modified_as_float": true,
+  "max_overt_length": 1000000000000000,
+  "premade_covert_is_text": true,
+  "premade_covert_path": "covert_input.txt",
+  "sensor_data_folder": "./sensor_data",
+  "use_premade_covert": false,
+  "use_sensor_data": false
+}
